@@ -1,7 +1,7 @@
 FROM alpine:latest
 
-ENV HELM_VERSION 2.10.0
-ENV KUBERNETES_VERSION 1.10.8
+ENV HELM_VERSION 2.15.2
+ENV KUBERNETES_VERSION 1.16.2
 
 RUN apk add -U openssl curl tar gzip bash ca-certificates git && \
     wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub && \
